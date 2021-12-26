@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Welcome to Kokoa Clone</title>
+    <title>Welcome to Adventure talk</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
+  <body class="bg-img">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -22,21 +22,22 @@
       </div>
     </div>
     <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-      <p class="welcome-header__text">If you have a Kokoa Account, log in with you email or your phone</p>
+      <h1 class="welcome-header__title">Welcome to Adventure Talk</h1>
+      <p class="welcome-header__text">If you have a Adventure Account, log in with you email or your phone</p>
     </header>
 
     <form action="friends.html" method="get" id="login-form" class="login-form">
-      <input type="text" name="username" placeholder="Email or phone number" class="login-form__input"/>
-      <input type="password" name="password" placeholder="Password" class="login-form__input"/>
+      <input type="text" name="username" placeholder="Email or phone number" class="login-form__input" pattern="(\s*[0-9]{2,3}\s*-\s*[0-9]{3,4}\s*-\s*[0-9]{3,4}\s*)|(\w+@\w+.\w+)" required/>
+      <input type="password" name="password" placeholder="Password" class="login-form__input" required/>
       <input type="submit" value="Log In" class="login-form__btn"/>
       <input type="submit" value="Sign Up"  class="login-form__btn"/>
-      <a href="#"  class="login-form__anchor">Find Kokoa Account or Password</a>
+      <a href="#"  class="login-form__anchor">Find Adventure Account or Password</a>
     </form>
     
     <div id="no-mobile">
-      <span>Your screen is too big(Max width is 800px)</span>
+      <span>Your screen is too big(Your screen should be between 400px and 650px)</span>
     </div>
     <script src="https://kit.fontawesome.com/97b5dd4b70.js" crossorigin="anonymous"></script>
+    <script src="js/bg.js"></script>
   </body>
 </html>

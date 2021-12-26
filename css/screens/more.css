@@ -15,7 +15,6 @@
 
 .more-suggestions__icons {
   display: flex;
-
 }
 
 .more-suggestions__icon {
@@ -31,7 +30,7 @@
   align-items: center;
   width: 60px;
   height: 60px;
-  background-color: var(--yellow);
+  background-color: var(--main-color);
   border-radius: 10px;
   margin-bottom: 10px;
 }

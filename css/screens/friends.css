@@ -2,11 +2,11 @@
   display:block;
   text-align: center;
   width:100%;
-  background-color: #fafafa;
   padding: 15px 0px;
   font-size: 16px;
   margin-bottom: 10px;
   margin-top: -15px;
+  background-color: #9dd7f9;
 }
 
 #friends-display-link i {
@@ -16,6 +16,7 @@
 
 .friends-screen {
   padding: 0px var(--horizontal--space);
+  margin-bottom: 90px;
 }
 
 .friends-screen__channel {
@@ -43,15 +44,23 @@
 }
 
 #splash-screen {
-  background-color: var(--yellow);
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
+  background-color: black;
+  background-image: url('../../photo/space.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 140px;
   animation: hideSplashScreen 1s ease-in-out forwards;
-  animation-delay: 1s;
+  animation-delay: 3s;
+}
+
+#splash-screen img {
+  width: 60%;
 }

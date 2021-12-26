@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Chat w/ Prisoner - Kokoa Clone</title>
+	<title>Chat w/ Marcy - Adventure Talk</title>
 	<link href="css/styles.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -28,7 +28,7 @@
         <a href="more.html"><i class="fas fa-angle-left fa-2x"></i></a>
       </div>
       <div class="alt-header__column">
-        <h1 class="alt-header__title">Elk</h1>
+        <h1 class="alt-header__title">Marcy</h1>
       </div>
       <div class="alt-header__column">
         <i class="fas fa-search fa-lg"></i>
@@ -38,67 +38,68 @@
 
     <main class="main-screen main-chat">
       <div class="chat__timestamp">
-        Tuesday, June, 30, 2020
+        Sunday, December, 25, 1021
       </div>
-      <div class="chat__messages">
+      <div class="chat__messages" id="chat__messages">
         <div class="message-row">
-          <img src="photo/Prisoner.png"/>
+          <img src="photo/marceline.gif"/>
           <div class="message-row__content">
-            <span class="message__author">Elk</span>
+            <span class="message__author">Marcy</span>
             <div class="message__payload">
-              <span class="message__bubble">Wtf</span>
-              <span class="message__time">21:27</span>
+              <span class="message__bubble">헤이 핀 오늘 만날래?</span>
+              <span class="message__time">16:14</span>
             </div>
           </div>
         </div>
         <div class="message-row message-row--own">
-          <img src="photo/Prisoner.png"/>
+          <img src="photo/marceline.gif"/>
           <div class="message-row__content">
             <span class="message__author"></span>
             <div class="message__payload">
-              <span class="message__bubble">Hi</span>
-              <span class="message__time">21:28</span>
+              <span class="message__bubble">좋은데? 언제 만날래?</span>
+              <span class="message__time">16:19</span>
             </div>
           </div>
         </div>
         <div class="message-row">
-          <img src="photo/Prisoner.png"/>
+          <img src="photo/marceline.gif"/>
           <div class="message-row__content">
-            <span class="message__author">Elk</span>
+            <span class="message__author">Marcy</span>
             <div class="message__payload">
-              <span class="message__bubble">You're a traitor</span>
-              <span class="message__time">22:02</span>
+              <span class="message__bubble">지금 니 집 앞이야</span>
+              <span class="message__time">16:22</span>
             </div>
           </div>
         </div>
-        <div class="message-row message-row--own">
-          <img src="photo/Prisoner.png"/>
+        <div class="message-row message-row--seq">
+          <img src="photo/marceline.gif"/>
           <div class="message-row__content">
             <span class="message__author"></span>
             <div class="message__payload">
-              <span class="message__bubble">Im sry 4 dat dude</span>
-              <span class="message__time">22:05</span>
+              <span class="message__bubble">빨리 나와</span>
+              <span class="message__time">16:24</span>
             </div>
           </div>
         </div>
       </div>
     </main>
 
-    <form class="reply">
+    <form class="reply" id="msg-form">
       <div class="reply__column">
         <i class="far fa-plus-square"></i>
       </div>
       <div class="reply__column">
-        <input type="text" placeholder="Write a message"/>
+        <input type="text" placeholder="Write a message" name="msg"/>
         <i class="far fa-smile-wink"></i>
-        <button>
+        <button id="send-msg">
           <i class="fas fa-arrow-up"></i>
         </button>
       </div>
     </form>
     <div id="no-mobile">
-      <span>Your screen is too big(Max width is 800px)</span>
+      <span>Your screen is too big(Your screen should be between 400px and 650px)</span>
     </div>
     <script src="https://kit.fontawesome.com/97b5dd4b70.js" crossorigin="anonymous"></script>
+    <script src="js/chat.js"></script>
   </body>
 </html>

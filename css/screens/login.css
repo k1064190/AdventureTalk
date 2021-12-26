@@ -6,7 +6,7 @@
 
 .login-form__input, .login-form__btn {
   border: 0;
-  padding: 3% 0;
+  padding: 3% 3%;
   font-size: 18px;
   margin: 0 0 6% 0;
 }
@@ -25,7 +25,7 @@
 }
 
 .login-form__btn {
-  background-color : var(--yellow);
+  background-color : var(--main-color);
   cursor: pointer;
 }
 

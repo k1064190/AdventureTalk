@@ -1,0 +1,84 @@
+#profile-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  background-image: url('../../photo/profile_bg/finn.jpg');
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#profile-screen .status-bar {
+  background-color: transparent;
+}
+
+#profile-screen .screen-header {
+  background-color: transparent;
+}
+
+#profile-screen .screen-header__column:last-child i {
+  margin-left: 15px;
+}
+
+.profile-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: auto;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-info__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 36px;
+}
+
+.profile-info span {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color:white;
+}
+
+.profile-info span:last-child {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.profile-settings {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  padding-top: 25px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.profile-settings__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  color:white;
+  font-size: 18px;
+}
+
+.profile-settings__row span {
+  text-align: center;
+  margin-top: 5px;
+  height: 50px;
+}
